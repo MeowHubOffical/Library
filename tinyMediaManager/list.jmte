@@ -31,40 +31,11 @@
    <Column ss:Width="33.00" ss:StyleID="s22"/>
    <Column ss:Width="200.00"/>
    <Column ss:Width="200.00"/>
+   <Column ss:Width="100.00"/>
+   <Column ss:Width="100.00"/>
+   <Column ss:Width="100.00"/>
    <Column ss:Width="200.00"/>
-   <Column ss:Width="200.00"/>
-   <Column ss:Width="100.00"/>
-   <Column ss:Width="100.00" ss:StyleID="s23" />
-   <Column ss:Width="60.00" ss:StyleID="s22" />
-   <Column ss:Width="60.00" ss:StyleID="s22" />
-   <Column ss:Width="120.00"/>
-   <Column ss:Width="70.00" ss:StyleID="s22" />
-   <Column ss:Width="50.00" ss:StyleID="s22" />
-   <Column ss:Width="50.00" ss:StyleID="s22" />
-   <Column ss:Width="200.00"/>
-   <Column ss:Width="260.00"/>
-   <Column ss:Width="300.00"/>
-   <Column ss:Width="70.00"/>
-   <Column ss:Width="70.00" ss:StyleID="s23" />
-   <Column ss:Width="100.00"/>
-   <Column ss:Width="40.00"/>
-   <Column ss:Width="40.00"/>
-   <Column ss:Width="40.00"/>
-   <Column ss:Width="70.00" ss:StyleID="s22" />
-   <Column ss:Width="50.00" ss:StyleID="s22" />
-   <Column ss:Width="50.00"/>
-   <Column ss:Width="50.00"/>
-   <Column ss:Width="50.00"/>
-   <Column ss:Width="70.00"/>
-   <Column ss:Width="33.00" ss:StyleID="s22" />
-   <Column ss:Width="33.00" ss:StyleID="s22" />
-   <Column ss:Width="33.00" ss:StyleID="s22" />
-   <Column ss:Width="33.00" ss:StyleID="s22" />
-   <Column ss:Width="33.00" ss:StyleID="s22" />
-   <Column ss:Width="300.00"/>
-   <Column ss:Width="100.00"/>
-   <Column ss:Width="100.00"/>
-   <Column ss:Width="100.00"/>
+   <Column ss:Width="60.00" ss:StyleID="s22" /> //以下内容均为空白
 
 
 <Row>
