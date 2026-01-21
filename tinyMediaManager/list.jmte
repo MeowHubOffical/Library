@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ 
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s22">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+  </Style>
+  <Style ss:ID="s23">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <NumberFormat ss:Format="Short Date"/>
+  </Style>
+ </Styles>
+ 
+ <Worksheet ss:Name="movielist_format">
+  <Table x:FullColumns="1" x:FullRows="1" ss:DefaultColumnWidth="60">
+
+   <Column ss:Width="200.00"/>
+   <Column ss:Width="33.00" ss:StyleID="s22"/>
+   <Column ss:Width="200.00"/>
+   <Column ss:Width="200.00"/>
+   <Column ss:Width="200.00"/>
+   <Column ss:Width="200.00"/>
+   <Column ss:Width="100.00"/>
+   <Column ss:Width="100.00" ss:StyleID="s23" />
+   <Column ss:Width="60.00" ss:StyleID="s22" />
+   <Column ss:Width="60.00" ss:StyleID="s22" />
+   <Column ss:Width="120.00"/>
+   <Column ss:Width="70.00" ss:StyleID="s22" />
+   <Column ss:Width="50.00" ss:StyleID="s22" />
+   <Column ss:Width="50.00" ss:StyleID="s22" />
+   <Column ss:Width="200.00"/>
+   <Column ss:Width="260.00"/>
+   <Column ss:Width="300.00"/>
+   <Column ss:Width="70.00"/>
+   <Column ss:Width="70.00" ss:StyleID="s23" />
+   <Column ss:Width="100.00"/>
+   <Column ss:Width="40.00"/>
+   <Column ss:Width="40.00"/>
+   <Column ss:Width="40.00"/>
+   <Column ss:Width="70.00" ss:StyleID="s22" />
+   <Column ss:Width="50.00" ss:StyleID="s22" />
+   <Column ss:Width="50.00"/>
+   <Column ss:Width="50.00"/>
+   <Column ss:Width="50.00"/>
+   <Column ss:Width="70.00"/>
+   <Column ss:Width="33.00" ss:StyleID="s22" />
+   <Column ss:Width="33.00" ss:StyleID="s22" />
+   <Column ss:Width="33.00" ss:StyleID="s22" />
+   <Column ss:Width="33.00" ss:StyleID="s22" />
+   <Column ss:Width="33.00" ss:StyleID="s22" />
+   <Column ss:Width="300.00"/>
+   <Column ss:Width="100.00"/>
+   <Column ss:Width="100.00"/>
+   <Column ss:Width="100.00"/>
+
+
+<Row>
+     <Cell><Data ss:Type="String">Title</Data></Cell>
+     <Cell><Data ss:Type="String">Year</Data></Cell>
+     <Cell><Data ss:Type="String">Movie set</Data></Cell>
+     <Cell><Data ss:Type="String">Original title</Data></Cell>
+     <Cell><Data ss:Type="String">Imdb Id</Data></Cell>
+     <Cell><Data ss:Type="String">Tmdb Id</Data></Cell>
+     <Cell><Data ss:Type="String">Path</Data></Cell>
+     <Cell><Data ss:Type="String">File name</Data></Cell>
+     <Cell><Data ss:Type="String">File extension</Data></Cell>
+     <Cell><Data ss:Type="String">Format Name</Data></Cell>
+</Row>
+
+${foreach movies movie}
+   <Row>
+    <Cell><Data ss:Type="String">${movie.title}</Data></Cell>
+    <Cell><Data ss:Type="Number">${movie.year}</Data></Cell>
+    <Cell><Data ss:Type="String">${movie.movieSet}</Data></Cell>
+    <Cell><Data ss:Type="String">${movie.originalTitle}</Data></Cell>
+    <Cell><Data ss:Type="String">${movie.imdbId}</Data></Cell>
+    <Cell><Data ss:Type="String">${movie.tmdbId}</Data></Cell>
+    <Cell><Data ss:Type="String">${movie.path}</Data></Cell>
+    <Cell><Data ss:Type="String">${movie.mainVideoFile.filename}</Data></Cell>
+	<Cell><Data ss:Type="String">${movie.mainVideoFile.extension}</Data></Cell>
+	<Cell><Data ss:Type="String">${movie.title}.(${movie.year}).${movie.originalTitle}.[${movie.imdbId}].[tmdb=${movie.tmdbId}].${movie.mainVideoFile.extension}</Data></Cell>
+   </Row>
+${end}
+
+  </Table>
+ </Worksheet>
+</Workbook>
